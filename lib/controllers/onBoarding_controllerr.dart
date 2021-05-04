@@ -9,8 +9,12 @@ class onBoardingController extends GetxController{
   var pageController = PageController();
 
 
+  bool get isLastPage => selectedPageIndex.value == onBoardingPages.length -1;
   forwardPage(){
-
+    if(isLastPage){
+      //go to loginpage
+    }
+    else
    pageController.nextPage(duration: 300.milliseconds, curve: Curves.ease);
   }
 

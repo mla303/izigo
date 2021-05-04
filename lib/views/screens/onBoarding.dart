@@ -70,14 +70,17 @@ class onBoardingpage extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  CustomButton(
-                  color: Theme.of(context).primaryColor,
-                    lable: "Login",
-                    onPress: () => Get.snackbar("wait", "Work Under Construction"),
-                    lableColor: Colors.white,
-                    borderColor: Theme.of(context).primaryColor,
-                    buttonHeight: Get.height/20,
-                    radius: 25,
+                  Obx(() {
+                      return CustomButton(
+                      color: Theme.of(context).primaryColor,
+                        lable: controller.isLastPage ? "Login" : "Next",
+                        onPress: () => controller.forwardPage(),
+                        lableColor: Colors.white,
+                        borderColor: Theme.of(context).primaryColor,
+                        buttonHeight: Get.height/20,
+                        radius: 25,
+                      );
+                    }
                   ),
                   SizedBox(height: 10,),
                   CustomButton(
