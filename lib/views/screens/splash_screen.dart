@@ -11,7 +11,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Future.delayed(Duration(seconds: 2)).then((value) {
-      Get.toNamed("/OnBording");
+      Get.toNamed("/homepage");
     });
     super.initState();
   }
@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("assets/images/logo.png",scale: 0.6,),
+              Image.asset("assets/images/logo.png",scale: 1.2,),
               SizedBox(
                 height: 20,
               ),

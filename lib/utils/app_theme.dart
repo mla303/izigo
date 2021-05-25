@@ -11,10 +11,11 @@ class AppTheme {
       bodyText1: const TextStyle(
         fontFamily: 'WorkSans',
         fontSize: 14,
-        color: const Color(0xff9D9EA3),
+        color: const Color(0xff003560),
       ),
       bodyText2: const TextStyle(
         fontFamily: 'WorkSans',
+        fontSize: 12,
         fontWeight: FontWeight.w600,
         color: const Color(0xff9D9EA3),
       ),
@@ -27,8 +28,9 @@ class AppTheme {
       headline1: const TextStyle(
         fontFamily: 'WorkSans',
         fontStyle: FontStyle.normal,
+        fontSize: 18,
         fontWeight: FontWeight.w500,
-        color: Colors.black,
+        color: Color(0xff003560),
       ),
     ),
   );

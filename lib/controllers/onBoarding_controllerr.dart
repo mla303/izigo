@@ -12,13 +12,14 @@ class onBoardingController extends GetxController{
   bool get isLastPage => selectedPageIndex.value == onBoardingPages.length -1;
   forwardPage(){
     if(isLastPage){
-      //go to loginpage
+      Get.offNamed("/SignInPage");
     }
     else
    pageController.nextPage(duration: 300.milliseconds, curve: Curves.ease);
   }
 
   List<onBoardingModel> onBoardingPages = [
+
     onBoardingModel(
       imageUrl: 'assets/images/onboarding1.png',
       title: 'Hotel Offers',
@@ -34,6 +35,7 @@ class onBoardingController extends GetxController{
       title: 'Holiday colony',
       description: 'Book one of our unique hotel to escape the ordinary',
     ),
+
   ];
 
 }

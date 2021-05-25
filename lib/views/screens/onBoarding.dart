@@ -12,6 +12,7 @@ class onBoardingpage extends StatelessWidget {
   Widget build(BuildContext context) {
 
 
+
     return Scaffold(
       body: Container(
         color: Colors.white,
@@ -86,7 +87,7 @@ class onBoardingpage extends StatelessWidget {
                   CustomButton(
                     color: Colors.white,
                     lable: "Create Account",
-                    onPress: () => Get.snackbar("wait", "Work Under Construction"),
+                    onPress: () => Get.offNamed("/SignUpPage"),
                     lableColor: Theme.of(context).primaryColor,
                     borderColor: Theme.of(context).primaryColor,
                     buttonHeight: Get.height/20,
