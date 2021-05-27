@@ -22,7 +22,7 @@ class CustomIconTextField extends StatelessWidget {
       width: width,
       margin: EdgeInsets.only(top: 0, left: 0, right: 0),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12), color: Color(0xffEFEFF4)),
+          borderRadius: BorderRadius.circular(10), color: Color(0xffEFEFF4)),
       child: Row(
         children: [
           Expanded(
